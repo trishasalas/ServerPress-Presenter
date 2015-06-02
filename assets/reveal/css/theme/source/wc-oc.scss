@@ -1,0 +1,45 @@
+/**
+ * WordCamp Orange County Theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Bitter:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: #141412;
+$headingFont: 'Bitter', serif;
+$headingColor: #141412;
+$headingTextShadow: none;
+$backgroundColor: #f7fbfc;
+$linkColor: #bc360a;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #D96E2B;
+
+// Fix links so they are not cut off
+.reveal a {
+  line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+  @include radial-gradient( #493529, #7F7169 );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
