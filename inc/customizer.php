@@ -174,19 +174,8 @@ function ds_fields( $fields ) {
 		'default'     => 'sky',
 		'priority'    => 10,
 		'choices'     => array(
-				'marc'            => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-miami.png',
+				'wc-oc'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-oc.png',
 				'wc-miami'        => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-miami.png',
-				'sky'             => trailingslashit( KIRKI_URL ) . 'assets/images/themes/sky.png',
-				'beige'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/beige.png',
-				'black'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/black.png',
-				'blood'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/blood.png',
-				'league'          => trailingslashit( KIRKI_URL ) . 'assets/images/themes/league.png',
-				'moon'            => trailingslashit( KIRKI_URL ) . 'assets/images/themes/moon.png',
-				'night'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/night.png',
-				'serif'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/serif.png',
-				'simple'          => trailingslashit( KIRKI_URL ) . 'assets/images/themes/simple.png',
-				'solarized'       => trailingslashit( KIRKI_URL ) . 'assets/images/themes/solarized.png',
-				'white'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/white.png',
 			),
 	);
 
