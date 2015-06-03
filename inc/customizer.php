@@ -176,6 +176,7 @@ function ds_fields( $fields ) {
 		'choices'     => array(
 				'wc-oc'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-oc.png',
 				'wc-miami'        => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-miami.png',
+				'sky'        	  => trailingslashit( KIRKI_URL ) . 'assets/images/themes/sky.png',
 			),
 	);
 
