@@ -1,0 +1,127 @@
+/**
+ * WordCamp KC Theme
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league/league.css);
+@import url(../../lib/font/lato/lato.css);
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'League Gothic', sans-serif;
+$mainColor: #fff;
+$headingFont: 'dude', sans-serif;
+$headingColor: #fff;
+$headingLetterSpacing: 1px;
+// Override theme settings (see ../template/settings.scss)
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+$backgroundColor: #247799;
+$linkColor: lighten(#d54e21, 10%);
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #d54e21;
+
+// Fix links so they are not cut off
+.reveal a {
+	line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( #247799,  #458CA9 );
+}
+
+.reveal {
+  .controls {
+    div.navigate-left,
+    div.navigate-left.enabled {
+      border-right-color: #d54e21 !important;
+      color: #d54e21;
+
+      &:hover {
+        border-right-color: lighten(#d54e21, 20%) !important;
+        color: lighten(#d54e21, 20%);
+      }
+    }
+
+    div.navigate-right,
+    div.navigate-right.enabled {
+      border-left-color: #d54e21 !important;
+      color: #d54e21;
+
+      &:hover {
+        border-left-color: lighten(#d54e21, 20%) !important;
+        color: lighten(#d54e21, 20%);
+      }
+    }
+
+    div.navigate-up,
+    div.navigate-up.enabled {
+      border-bottom-color: #d54e21 !important;
+      color: #d54e21;
+
+      &:hover {
+        border-bottom-color: lighten(#d54e21, 20%) !important;
+        color: lighten(#d54e21, 20%);
+      }
+    }
+
+    div.navigate-down,
+    div.navigate-down.enabled {
+      border-top-color: #d54e21 !important;
+      color: #d54e21;
+
+      &:hover {
+        border-top-color: lighten(#d54e21, 20%) !important;
+        color: lighten(#d54e21, 20%);
+      }
+    }
+  }
+  .progress {
+    span {
+      background: #d54e21 !important;
+    }
+  }
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+	aside.controls {
+		&:after {
+          content: '';
+		position: absolute;
+		top: 33px;
+		left: 33px;
+		z-index: 400;
+		background: url(../../../images/serverpress-wapuu.png) no-repeat;
+          width: 44px;
+          height: 48px;
+		}
+	}
+
+    .progress {
+      &:after{
+        content: '';
+        position: absolute;
+        top: -90px !important;
+        left: 10px;
+        background: url(../../../images/sp-logo-with-twitter-stuff.png) no-repeat;
+        width: 800px;
+        height: 77px !important;
+        z-index: 400;
+      }
+    }
